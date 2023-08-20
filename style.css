@@ -10,7 +10,7 @@ html{
 	scroll-behavior: smooth;
 }
 .max-width{
-	max-width: 1300px;
+	max-inline-size: 1300px;
 	padding: 0 80px;
 	margin: auto;
 }
@@ -20,7 +20,7 @@ html{
 	position: fixed;
 	z-index: 999;
 	padding: 30px 0;
-	width: 100%;
+	inline-size: 100%;
 	font-family: 'ubuntu', sans-serif;
 	transition: all 0.3s ease;
 }
@@ -54,7 +54,7 @@ html{
 	color: #fff;
 	font-size: 18px;
 	font-weight: 500;
-	margin-left: 25px;
+	margin-inline-start: 25px;
 	transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
@@ -72,11 +72,11 @@ html{
 }
 .scroll-up-btn{
 	position:fixed;
-	height: 45px;
-	width: 42px;
+	block-size: 45px;
+	inline-size: 42px;
 	background: #4472c4;
-	right: 30px;
-	bottom: 10px;
+	inset-inline-end: 30px;
+	inset-block-end: 10px;
 	text-align: center;
 	line-height: 45px;
 	color: #fff;
@@ -87,7 +87,7 @@ html{
 	transition: all 0.3s ease; 
 }
 .scroll-up-btn.show{
-	bottom: 30px;
+	inset-block-end: 30px;
 	opacity: 1;
 	pointer-events: auto;
 }
@@ -97,9 +97,9 @@ html{
 	display: flex;
 	background: url("images/image1.jpg") no-repeat center;
 	background-size:cover;
-	height: 100vh;
+	block-size: 100vh;
 	color: #fff;
-	min-height: 500px;
+	min-block-size: 500px;
 	font-family: 'ubuntu', sans-serif;
 }
 .accueil .max-width{
@@ -111,7 +111,7 @@ html{
 .accueil .contenu-accueil .text-2{
 	font-size: 75px;
 	font-weight: 600;
-	margin-left: -3px;
+	margin-inline-start: -3px;
 }
 .accueil .contenu-accueil .text-3{
 	font-size: 40px;
@@ -127,7 +127,7 @@ html{
 	color: #fff;
 	font-size: 25px;
 	padding: 12px 36px;
-	margin-top: 20px;
+	margin-block-start: 20px;
 	border-radius: 6px;
 	border: 2px solid #4472c4;
 	transition: all 0.3s ease;
@@ -158,24 +158,24 @@ section .titre{
 	text-align: center;
 	font-size: 40px;
 	font-weight: 500;
-	margin-bottom: 60px;
-	padding-bottom: 20px;
+	margin-block-end: 60px;
+	padding-block-end: 20px;
 	font-family: 'ubuntu', sans-serif;
 }
 section .titre::before{ 
 	content: "";
 	position: absolute;
-	bottom: 0px;
-	left: 50%;
-	width: 180px;
-	height: 3px;
+	inset-block-end: 0px;
+	inset-inline-start: 50%;
+	inline-size: 180px;
+	block-size: 3px;
 	background: #111;
 	transform: translateX(-50%);
 }
 section .titre::after{
 	position: absolute;
-	bottom: -10px;
-	left: 50%;
+	inset-block-end: -10px;
+	inset-inline-start: 50%;
 	font-size: 20px;
 	color: #4472c4;
 	padding: 2px;
@@ -188,21 +188,21 @@ section .titre::after{
 	content: "Qui suis-je ?";
 }
 .apropos .contenu-apropos .left {
-	width: 45%;
+	inline-size: 45%;
 }
 .apropos .contenu-apropos .left img{
-	width: 400px;
- 	height: 400px;
+	inline-size: 400px;
+ 	block-size: 400px;
 	object-fit: cover;
 	border-radius: 6px;
 }
 .apropos .contenu-apropos .right {
-	width: 55%;
+	inline-size: 55%;
 }
 .apropos .contenu-apropos .right .text{
 	font-size: 25px;
 	font-weight: 600;
-	margin-bottom: 10px;
+	margin-block-end: 10px;
 }
 .apropos .contenu-apropos .right .text span{
 	color: #4472c4;
@@ -217,7 +217,7 @@ section .titre::after{
 	font-size: 20px;
 	font-weight: 500;
 	padding: 10px 30px;
-	margin-top: 20px;
+	margin-block-start: 20px;
 	border-radius: 6px;
 	border: 2px solid #4472c4;
 	transition: all 0.3s ease;
@@ -242,7 +242,7 @@ section .titre::after{
 	content: "Champ d'action";
 }
 .services .contenu-services .card{
-	width: calc(33% - 20px);
+	inline-size: calc(33% - 20px);
 	background: #222;
 	text-align: center;
 	border-radius: 6px;
@@ -280,12 +280,12 @@ section .titre::after{
 	content: "savoir faire";
 }
 .competences .contenu-competences .column{
-	width: calc(50% - 30px);
+	inline-size: calc(50% - 30px);
 }
 .competences .contenu-competences .left .text{
 	font-size: 20px;
 	font-weight: 600;
-	margin-bottom: 25px;
+	margin-block-end: 25px;
 }
 .competences .contenu-competences .left p{
 	text-align: justify;
@@ -297,7 +297,7 @@ section .titre::after{
 	font-size: 18px;
 	font-weight: 500;
 	padding: 8px 16px;
-	margin-top: 20px;
+	margin-block-start: 20px;
 	border-radius: 6px;
 	border: 2px solid #4472c4;
 	transition: all 0.3s ease;
@@ -307,11 +307,11 @@ section .titre::after{
 	background: none;
 }
 .competences .contenu-competences .right .bars{
-	margin-bottom: 15px;
+	margin-block-end: 15px;
 }
 .competences .contenu-competences .right .info{
 	display: flex;
-	margin-bottom: 5px;
+	margin-block-end: 5px;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -320,33 +320,33 @@ section .titre::after{
 	font-size: 20px;
 }
 .competences .contenu-competences .right .line{
-	height: 5px;
-	width: 100%;
+	block-size: 5px;
+	inline-size: 100%;
 	background: lightgray;
 	position: relative;
 }
 .competences .contenu-competences .right .line::before{
 	content: "";
 	position: absolute;
-	height: 100%;
-	left: 0;
-	top: 0;
+	block-size: 100%;
+	inset-inline-start: 0;
+	inset-block-start: 0;
 	background: #4472c4;
 }
 .competences .contenu-competences .right .html_css::before{
-	width: 90%;
+	inline-size: 90%;
 }
 .competences .contenu-competences .right .javascript::before{
-	width: 40%;
+	inline-size: 40%;
 }
 .competences .contenu-competences .right .php_mysql::before{
-	width: 20%;
+	inline-size: 20%;
 }
 .competences .contenu-competences .right .flutter::before{
-	width: 40%;
+	inline-size: 40%;
 }
 .competences .contenu-competences .right .c::before{
-	width: 4%;
+	inline-size: 4%;
 }
 
 /* equipe section styling */
@@ -379,8 +379,8 @@ section .titre::after{
 	margin: 10px 0 7px 0;
 }
 .equipe .carousel .card img{
-	height: 150px;
-	width: 150px;
+	block-size: 150px;
+	inline-size: 150px;
 	object-fit: cover;
 	border-radius:50%;
 	border: 5px solid #4472c4;
@@ -391,12 +391,12 @@ section .titre::after{
 }
 .owl-dots{
 	text-align: center;
-	margin-top: 20px;
+	margin-block-start: 20px;
 
 }
 .owl-dot{
-	height: 13px;
-	width: 13px;
+	block-size: 13px;
+	inline-size: 13px;
 	margin: 0 5px;
 	outline: none!important;
 	border-radius: 50%;
@@ -404,7 +404,7 @@ section .titre::after{
 	transition: all 0.3s ease;
 }
 .owl-dot.active{
-	width: 35px;
+	inline-size: 35px;
 	border-radius: 14px;
 }
 .owl-dot.active,
@@ -416,12 +416,12 @@ section .titre::after{
 	content: "Garder le lien";
 }
 .contact .contenu-contact .column{
-	width: calc(50% - 30px);
+	inline-size: calc(50% - 30px);
 }
 .contact .contenu-contact .text{
 	font-size: 20px;
 	font-weight: 600;
-	margin-bottom: 10px;
+	margin-block-end: 10px;
 }
 .contact .contenu-contact .left p{
 	text-align: justify;
@@ -431,11 +431,11 @@ section .titre::after{
 }
 .contact .contenu-contact .row{
 	display: flex;
-	height: 65px;
+	block-size: 65px;
 	align-items: center;
 }
 .contact .contenu-contact .row .info{
-	margin-left: 30px; 
+	margin-inline-start: 30px; 
 }
 .contact .contenu-contact .row i{
 	font-size: 25px;
@@ -452,24 +452,24 @@ section .titre::after{
 }
 .contact .right form .field,
 .contact .right form .fields .field{
-	height: 45px;
-	width: 100%;
-	margin-bottom: 15px;
+	block-size: 45px;
+	inline-size: 100%;
+	margin-block-end: 15px;
 }
 .contact .right form .textarea{
-	height: 80px;
-	width: 100%;
+	block-size: 80px;
+	inline-size: 100%;
 }
 .contact .right form .name{
-	margin-right: 10px;
+	margin-inline-end: 10px;
 }
 .contact .right form .email{
-	margin-left: 10px;
+	margin-inline-start: 10px;
 }
 .contact .right form .field input,
 .contact .right form .textarea textarea{
-	height: 100%;
-	width: 100%;
+	block-size: 100%;
+	inline-size: 100%;
 	border:1px solid lightgray;
 	border-radius: 6px;
 	outline: none;
@@ -478,16 +478,16 @@ section .titre::after{
 	font-family: 'poppins', sans-serif;
 }
 .contact .right form .textarea textarea{
-	padding-top: 10px;
+	padding-block-start: 10px;
 	resize: none;
 }
 .contact .right form .button{
-	height: 47px;
-	width: 170px;
+	block-size: 47px;
+	inline-size: 170px;
 }
 .contact .right form .button button{
-	width: 100%;
-	height: 100%;
+	inline-size: 100%;
+	block-size: 100%;
 	border: 2px solid #4472c4;
 	background: #4472c4;
 	color: #fff;
@@ -520,23 +520,23 @@ footer span a:hover{
 
 
 /*responsive media query start*/
-@media (max-width:1300px){
+@media (max-inline-size:1300px){
 	.accueil .max-width{
-		margin-left: 0px;
+		margin-inline-start: 0px;
 	}
 }
-@media (max-width:1104px){
+@media (max-inline-size:1104px){
 	.apropos .contenu-apropos .left img{
-		width: 350px;
-		height: 350px;
+		inline-size: 350px;
+		block-size: 350px;
 	}
 }
-@media (max-width:991px){
+@media (max-inline-size:991px){
 	.max-width{
 		padding: 0 50px;
 	}
 }
-@media (max-width:947px){
+@media (max-inline-size:947px){
 	.menu-btn{
 		display: block;
 		z-index: 999;
@@ -546,17 +546,17 @@ footer span a:hover{
 	}
 	.navbar .menu{
 		position: fixed;
-		height: 100vh;
-		width: 100%;
-		left: -100%;
-		top: 0;
+		block-size: 100vh;
+		inline-size: 100%;
+		inset-inline-start: -100%;
+		inset-block-start: 0;
 		background: #111;
 		text-align: center;
-		padding-top: 80px;
+		padding-block-start: 80px;
 		transition: all 0.3s ease;
 	}
 	.navbar .menu.active{
-		left: 0;
+		inset-inline-start: 0;
 	}
 	.navbar .menu li {
 		display: block;
@@ -577,10 +577,10 @@ footer span a:hover{
 		padding: 10px 30px;
 	}
 	.max-width{
-		max-width: 1300px;
+		max-inline-size: 1300px;
 	}
 	.apropos .contenu-apropos .column{
-		width: 100%;
+		inline-size: 100%;
 	}
 	.apropos .contenu-apropos .left{
 		display: flex;
@@ -591,18 +591,18 @@ footer span a:hover{
 		flex: 100%;
 	}
 	.services .contenu-services .card{
-		width: calc(50% - 10px);
-		margin-bottom: 20px;
+		inline-size: calc(50% - 10px);
+		margin-block-end: 20px;
 	}
 	.competences .contenu-competences .column,
 	.contact .contenu-contact .column{
-		width: 100%;
-		margin-bottom: 35px;
+		inline-size: 100%;
+		margin-block-end: 35px;
 	}
 	
 }
 
-@media (max-width:690px){
+@media (max-inline-size:690px){
 	.max-width{
 		padding: 0 23px;
 	}
@@ -617,13 +617,13 @@ footer span a:hover{
 	} 
 	.services .contenu-services .card,
 	.competences .contenu-competences .column{
-		width: 100%;
+		inline-size: 100%;
 	}
 
 
 }
 
-@media (max-width:500px){
+@media (max-inline-size:500px){
 	.max-width{
 		padding: 0 23px;
 	}

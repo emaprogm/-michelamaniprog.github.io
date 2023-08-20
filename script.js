@@ -26,15 +26,15 @@ $(document).ready(function(){
     // typing animation script
 
     var typed = new Typed(".typing",{
-        strings:[" web", " mobile" ],
-        typeSpeed: 100,
+        strings:["Communication specialist","Front-end developer", "Graphic designer" ],
+        typeSpeed: 80,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2",{
-        strings:[" web", " mobile"],
-        typeSpeed: 100,
+        strings:["Communication specialist","Front-end developer", "Graphic designer"],
+        typeSpeed: 80,
         backSpeed: 60,
         loop: true
     });
