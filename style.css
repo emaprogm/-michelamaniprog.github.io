@@ -6,6 +6,9 @@
 	box-sizing: border-box;
 	text-decoration: none;
 }
+a:visited{
+	color: #d6d6d6;
+}
 html{
 	scroll-behavior: smooth;
 }
@@ -229,7 +232,7 @@ section .titre::after{
 
 /* Services sections styling */
 .services, .equipe{
-	background: #111;
+	background: #343434;
 	color: #fff;
 }
 .services .titre::before, 
@@ -600,6 +603,10 @@ footer span a:hover{
 		margin-bottom: 35px;
 	}
 	
+}
+.max-widt{
+	width: 1200px;
+	margin: 0 auto;
 }
 
 @media (max-width:690px){
